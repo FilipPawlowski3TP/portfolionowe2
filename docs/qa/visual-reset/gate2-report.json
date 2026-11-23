@@ -1,0 +1,50 @@
+{
+  "fit1280": {
+    "heroH": 900,
+    "viewportH": 900,
+    "fits": true,
+    "h1CardOverlapPx2": 0
+  },
+  "fit1440": {
+    "heroH": 900,
+    "viewportH": 900,
+    "fits": true,
+    "h1CardOverlapPx2": 0
+  },
+  "fit1920": {
+    "heroH": 900,
+    "viewportH": 900,
+    "fits": true,
+    "h1CardOverlapPx2": 0
+  },
+  "fit390": {
+    "heroH": 844,
+    "viewportH": 844,
+    "fits": true,
+    "h1CardOverlapPx2": 0
+  },
+  "unpin-desktop": {
+    "frameTopBefore": 0,
+    "frameTopAfter": -30,
+    "jump": 0,
+    "note": "probe at pin end (hero top + 400vh); linear move 0 -> -30 -> -300",
+    "pageErrors": "none"
+  },
+  "unpin-mobile": {
+    "frameTopBefore": 0,
+    "frameTopAfter": -30,
+    "jump": 0,
+    "note": "probe at pin end (hero top + 280vh); linear move 0 -> -30 -> -300",
+    "pageErrors": "none"
+  },
+  "fallback-reduce": {
+    "frameHidden": true,
+    "thumbVisible": true,
+    "realizacjaFallback": true
+  },
+  "fallback-nojs": {
+    "frameHidden": true,
+    "thumbVisible": true,
+    "realizacjaFallback": true
+  }
+}

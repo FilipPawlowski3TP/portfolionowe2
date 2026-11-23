@@ -1,0 +1,17 @@
+---
+// VISUAL PATCH v3 (user decision 2026-11-17): FAQ lives on its own page
+// (the site is no longer a single page).
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Faq from '../components/Faq.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/interactions.css';
+---
+
+<Base>
+  <Header />
+  <main id="tresc">
+    <Faq />
+  </main>
+  <Footer giant />
+</Base>

@@ -1,0 +1,42 @@
+/* VISUAL RESET v2 (§4) — paper & ink. One accent: --signal.
+   The new tokens override the legacy ones where names collide. */
+:root {
+  --paper: #f1f1ed;
+  --ink: #101114;
+  --ink-70: #3c3f46;
+  --mute: #5b5e66;
+  --line: rgba(16, 17, 20, 0.14);
+  --signal: #2a3bff;
+  color-scheme: light;
+
+  /* Typography (families applied literally in base.css; the local
+     "Pawłowski Display/Text" stay as fallback from the Astro Fonts API) */
+  --font-display: 'Bricolage Grotesque Variable', 'Pawłowski Display', system-ui, sans-serif;
+  --font-text: 'Instrument Sans Variable', 'Pawłowski Text', system-ui, sans-serif;
+  --font-fallback: system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Type scale (§4; §3 patch v3: h1 clamp(52px, 8.6vw, 168px)) */
+  --h1: clamp(52px, 8.6vw, 168px);
+  --h2: clamp(40px, 5.2vw, 88px);
+  --text: 1.125rem; /* 18px */
+  --text-lg: 1.25rem; /* 20px */
+  --caption: 0.875rem; /* 14px */
+
+  /* Layout (§2.7 patch v3: big screens grow to 2560px) */
+  --container: min(1760px, 92vw);
+  --pad-x: clamp(20px, 5.5vw, 120px);
+  --sp-section: clamp(96px, 14vh, 200px);
+  --header-h: 72px;
+  --radius-pill: 999px;
+
+  /* Dark section (§5 patch v3) — verified ≥ 4.5:1 on --night */
+  --night: #101114;
+  --night-ink: #f1f1ed;
+  --night-mute: #a9abb3;
+  --signal-on-dark: #8a95ff;
+
+  /* Motion tokens (§4): expo.out entrances, power3.inOut transitions */
+  --t-micro: 0.2s;
+  --t-mid: 0.5s;
+  --t-heading: 0.9s;
+}

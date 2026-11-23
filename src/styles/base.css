@@ -1,0 +1,111 @@
+/* VISUAL RESET v2 — base: fonts, reset, typography. No hidden initial states
+   (Krok 1 is static; motion states arrive in Krok 2/3 under .js + no-preference
+   only). */
+@import '@fontsource-variable/bricolage-grotesque';
+@import '@fontsource-variable/instrument-sans';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: calc(var(--header-h) + 16px);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Instrument Sans Variable', 'Pawłowski Text', var(--font-fallback);
+  font-size: var(--text-lg);
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Bricolage Grotesque Variable', 'Pawłowski Display', var(--font-fallback);
+  color: var(--ink);
+  margin: 0;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--h1);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: var(--h2);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(1.375rem, 1.1rem + 1vw, 1.75rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--signal);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Focus (§4): 2px --signal outline with 3px offset */
+:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--signal);
+  color: var(--paper);
+}
+
+.caption {
+  font-size: var(--caption);
+  line-height: 1.4;
+  color: var(--mute);
+}

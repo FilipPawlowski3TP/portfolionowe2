@@ -1,0 +1,253 @@
+/* VISUAL RESET v2 — layout: 1440 container, 12-col grid, section rhythm. */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--pad-x);
+}
+
+.section {
+  padding-block: var(--sp-section);
+}
+
+/* ---------- Header (72px; hide-on-scroll arrives with the pinned
+   sequence in Krok 2 — static in Krok 1) ---------- */
+.site-header {
+  position: relative;
+  z-index: 50;
+  height: var(--header-h);
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header__inner {
+  height: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--pad-x);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: var(--sp-6, 1.5rem);
+}
+
+.site-header__logo {
+  justify-self: start;
+  text-decoration: none;
+}
+
+.site-header__clock {
+  justify-self: center;
+  font-size: var(--caption);
+  color: var(--mute);
+  white-space: nowrap;
+}
+
+.site-header__navwrap {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* ---------- Hero (§3/§4: kinetic hero + curtain) ---------- */
+.hero {
+  position: relative;
+  z-index: 1;
+  /* exactly the viewport below the sticky header: the §3 foot row must be
+     inside the frame at scroll 0 (border-box keeps the padding inside). */
+  min-height: calc(100vh - var(--header-h));
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: clamp(24px, 4vh, 48px);
+  padding-bottom: clamp(24px, 4vh, 48px);
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 3vh, 40px);
+  width: 100%;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/* Krok 5: the hero background — dot grid + line-art wireframe (decorative). */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  color: var(--ink);
+}
+
+.hero__bg-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .hero__bg .wire {
+    display: none;
+  }
+}
+
+.hero__h1 {
+  margin: 0;
+  /* §3 keeps the 3-line composition on phones: nowrap lines need a lower
+     floor than the spec's 52px (a desktop value — 8.6vw exceeds it above
+     ~605px, so desktop is unchanged). Scoped to the hero on purpose: the
+     --h1 token is shared with the legal pages. */
+  font-size: clamp(32px, 8.6vw, 168px);
+}
+
+.hero__line {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero__sub {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.hero__lead {
+  max-width: 480px;
+  color: var(--ink-70);
+  margin: 0;
+}
+
+/* §3: foot row — latest realization (left), scroll hint (right), 15px. */
+.hero__foot {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  font-size: 15px;
+  color: var(--mute);
+}
+
+.hero__foot p {
+  margin: 0;
+}
+
+/* Review fix D: the project name is a proper noun — never break mid-name;
+   the wrap (if any) falls before the link instead. */
+.hero__latest a {
+  white-space: nowrap;
+  color: var(--mute);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.hero__latest a:hover {
+  color: var(--signal);
+}
+
+.hero__ctas {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- Zdanie przewodnie ---------- */
+.guiding {
+  padding-block: var(--sp-section);
+  border-block: 1px solid var(--line);
+}
+
+/* §4: the curtain — the whole page stack after the hero paints over the
+   pinned hero (z-index 2, opaque), with rounded top corners that flatten
+   as it docks (the one border-radius motion of §7). */
+.after-hero {
+  position: relative;
+  z-index: 2;
+  background: var(--paper);
+  border-radius: 40px 40px 0 0;
+}
+
+.guiding__text {
+  max-width: 1100px;
+  font-family: 'Bricolage Grotesque Variable', 'Pawłowski Display', var(--font-fallback);
+  font-size: clamp(1.75rem, 1.2rem + 2.2vw, 3.25rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+/* ---------- Sekcje: nagłówki ---------- */
+/* .faq__head / .contact__head keep the 12-col head grid (Faq, Contact).
+   Krok 5: Offer/Standard/Process/CtaBand render plain h2 + scannable grids. */
+.faq__head,
+.contact__head {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: clamp(16px, 2vw, 32px);
+  margin-bottom: clamp(40px, 6vh, 80px);
+}
+
+.faq__head h2 {
+  grid-column: 1 / span 8;
+}
+
+/* ---------- FAQ ---------- */
+.faq__list {
+  max-width: 900px;
+}
+
+/* ---------- Kontakt ---------- */
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: clamp(16px, 2vw, 32px);
+  row-gap: clamp(40px, 6vh, 72px);
+}
+
+.contact__direct {
+  grid-column: 1 / span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.contact__form-wrap {
+  grid-column: 7 / span 6;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding-block: clamp(1.5rem, 3vh, 2.5rem) 3rem;
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 3rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .hero__text {
+    grid-column: 1 / -1;
+  }
+
+  .contact__direct,
+  .contact__form-wrap {
+    grid-column: 1 / -1;
+    position: static;
+  }
+}

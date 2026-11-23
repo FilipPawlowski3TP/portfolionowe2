@@ -1,0 +1,32 @@
+{
+  "clock": {
+    "time": "04:53",
+    "day": "poniedziałek",
+    "sample": "Wrocław · 04:53 · poniedziałek"
+  },
+  "offerHover": {
+    "nameTransform": "matrix(1, 0, 0, 1, 12, 0)",
+    "arrowOpacity": "1",
+    "lineDashoffset": "0px"
+  },
+  "faq": {
+    "open": true,
+    "answerVisible": true,
+    "plusTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+  },
+  "copy": {
+    "status": "Skopiowano"
+  },
+  "headerHide": true,
+  "pageErrors": "none",
+  "fallback-reduce": {
+    "h1Visible": true,
+    "wrapHidden": true,
+    "thumbVisible": true
+  },
+  "fallback-nojs": {
+    "h1Visible": true,
+    "wrapHidden": true,
+    "thumbVisible": true
+  }
+}

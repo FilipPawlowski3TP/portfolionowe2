@@ -1,0 +1,30 @@
+{
+  "w360": {
+    "present": true,
+    "wrapperOverflow": "hidden/hidden",
+    "textW": 582,
+    "croppedSides": true,
+    "hScroll": 0
+  },
+  "w768": {
+    "present": true,
+    "wrapperOverflow": "hidden/hidden",
+    "textW": 1087,
+    "croppedSides": true,
+    "hScroll": 0
+  },
+  "w1440": {
+    "present": true,
+    "wrapperOverflow": "hidden/hidden",
+    "textW": 2038,
+    "croppedSides": true,
+    "hScroll": 0
+  },
+  "w1920": {
+    "present": true,
+    "wrapperOverflow": "hidden/hidden",
+    "textW": 2588,
+    "croppedSides": true,
+    "hScroll": 0
+  }
+}

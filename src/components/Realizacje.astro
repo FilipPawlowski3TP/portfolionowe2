@@ -1,0 +1,52 @@
+---
+// VISUAL PATCH v3 §6 (D4) — Realizacje: project rows (links open the live
+// site) + the always-present invite row. New projects = new site.projects
+// item, no layout change. Hover preview card lands in Krok 3.
+import T from './T.astro';
+import { site } from '../data/site';
+---
+
+<section class="section realizacje" id="realizacje" aria-labelledby="realizacje-h">
+  <div class="container">
+    <h2 class="realizacje__h2" id="realizacje-h">Realizacje</h2>
+
+    <ul class="realizacje__list">
+      {
+        site.projects.map((p) => (
+          <li>
+            <a class="project-row" href={p.url} target="_blank" rel="noopener" data-preview={p.preview}>
+              <span class="project-row__name">
+                <T text={p.name} />
+              </span>
+              <img
+                class="project-row__thumb"
+                src={p.preview}
+                alt=""
+                width="300"
+                height="190"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="project-row__type">
+                <T text={p.type} />
+              </span>
+              <span class="project-row__year">{p.year}</span>
+              <span class="project-row__arrow" aria-hidden="true">
+                ↗
+              </span>
+            </a>
+          </li>
+        ))
+      }
+      <li>
+        <div class="project-row project-row--invite">
+          <span class="project-row__name project-row__name--mute">Twoja firma?</span>
+          <a class="project-row__invite" href="/kontakt/">Napisz do mnie ↗</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- §6: one floating preview card (fine pointers; JS moves it). -->
+    <img class="project-preview" alt="" aria-hidden="true" decoding="async" />
+  </div>
+</section>

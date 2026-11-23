@@ -1,0 +1,16 @@
+---
+// VISUAL RESET v2 §5.3 — Zdanie przewodnie (words light up on scroll — Krok 3).
+import T from './T.astro';
+import { site } from '../data/site';
+---
+
+<section class="guiding" aria-label="Zdanie przewodnie">
+  <div class="container">
+    <p class="guiding__text" data-guiding>
+      <T text={site.guidingSentence} />
+    </p>
+    <p class="guiding__note">
+      <T text={site.guidingNote} />
+    </p>
+  </div>
+</section>

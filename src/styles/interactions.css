@@ -1,0 +1,166 @@
+/* VISUAL RESET v2 §6/§8 Krok 3 — interaction states (CSS-only parts):
+   offer row hover/focus with line drawing, FAQ plus rotation, header hide,
+   copy-email button states. Properties: transform, opacity, color,
+   background-color, SVG stroke only. */
+
+/* ---------- Header hide on scroll down (§5) ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10; /* above the §4 curtain (z-index 2) */
+  transition: transform 0.25s ease;
+}
+
+.site-header.is-hidden {
+  transform: translateY(-100%);
+}
+
+/* The live clock is a desktop detail (§5.4) — it would overflow the header
+   row on phones. §2.3: "Wrocław, 20:36", --mute, 15px. */
+.site-header__clock {
+  font-size: 15px;
+  color: var(--mute);
+}
+
+@media (max-width: 900px) {
+  .site-header__clock {
+    display: none;
+  }
+}
+
+/* ---------- Offer rows (§6): +12px shift, darker row, arrow, drawn line --- */
+.offer-row {
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.offer-row__num,
+.offer-row__name {
+  transition: transform 0.3s ease;
+}
+
+.offer-row__arrow {
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.offer-row__line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.offer-row__line line {
+  stroke: var(--signal);
+  stroke-width: 2;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset 0.45s ease;
+}
+
+@media (hover: hover) {
+  .offer-row:hover {
+    background-color: rgba(16, 17, 20, 0.03);
+  }
+
+  /* §2.6 patch v3: no 12px shift — nothing may move outside the row.
+     Feedback = colour + underline + arrow + drawn line (§7). */
+  .offer-row:hover .offer-row__num {
+    color: var(--signal);
+  }
+
+  .offer-row:hover .offer-row__arrow {
+    opacity: 1;
+    transform: translateX(0);
+    color: var(--signal);
+  }
+
+  .offer-row:hover .offer-row__line line {
+    stroke-dashoffset: 0;
+  }
+}
+
+.offer-row:focus-within {
+  background-color: rgba(16, 17, 20, 0.03);
+}
+
+.offer-row:focus-within .offer-row__num {
+  color: var(--signal);
+}
+
+.offer-row:focus-within .offer-row__arrow {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--signal);
+}
+
+.offer-row:focus-within .offer-row__line line {
+  stroke-dashoffset: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .offer-row__num,
+  .offer-row__name,
+  .offer-row__arrow,
+  .offer-row__line line,
+  .site-header {
+    transition: none;
+  }
+
+  .offer-row__line line {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ---------- FAQ plus (§8): rotates 45° on open ---------- */
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: color 0.2s ease;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  flex: none;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item summary:hover {
+  color: var(--signal);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-item summary::after {
+    transition: none;
+  }
+}
+
+/* ---------- Copy e-mail (§5.6) ---------- */
+.copy-email {
+  cursor: pointer;
+}
+
+.copy-email:hover {
+  color: var(--signal);
+  border-color: var(--signal);
+}

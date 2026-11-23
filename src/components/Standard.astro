@@ -1,0 +1,32 @@
+---
+// Krok 5 (przejrzystość): "Co dostajesz w każdej stronie" — 4 short benefit
+// blocks (grafik-24.pl's "Możemy pomóc" rhythm), icon + name + one line.
+// NOTE: site.standard items carry TODO_PRZEWAGI (owner confirmation pending).
+import T from './T.astro';
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+---
+
+<section class="section standard" id={site.standard.id} aria-labelledby="standard-h2">
+  <div class="container">
+    <h2 id="standard-h2">
+      <T text={site.standard.heading} />
+    </h2>
+
+    <div class="std-grid">
+      {
+        site.standard.items.map((it) => (
+          <article class="std">
+            <Icon name={it.icon} />
+            <h3 class="std__name">
+              <T text={it.name} />
+            </h3>
+            <p class="std__what">
+              <T text={it.what} />
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

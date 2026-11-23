@@ -1,0 +1,9 @@
+/* VISUAL PATCH v3 — motion states.
+   The old hero-window / realization-fallback states are removed (patch §1);
+   §4–§5 motion lands in Krok 2. */
+
+/* Watchdog fallback: if the motion boot fails, force everything visible. */
+html.reveal-all .split-line {
+  transform: none !important;
+  opacity: 1 !important;
+}

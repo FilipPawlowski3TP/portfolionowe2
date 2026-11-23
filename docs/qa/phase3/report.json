@@ -1,0 +1,107 @@
+[
+  {
+    "viewport": {
+      "w": 360,
+      "h": 800
+    },
+    "horizontalScroll": false,
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "docHeight": 8687,
+    "h1": 1,
+    "title": "Strony internetowe dla firm | Pawłowski Studio",
+    "brokenImgs": [],
+    "seriousViolations": [],
+    "consoleErrors": []
+  },
+  {
+    "viewport": {
+      "w": 390,
+      "h": 844
+    },
+    "horizontalScroll": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "docHeight": 8566,
+    "h1": 1,
+    "title": "Strony internetowe dla firm | Pawłowski Studio",
+    "brokenImgs": [],
+    "seriousViolations": [],
+    "consoleErrors": []
+  },
+  {
+    "viewport": {
+      "w": 768,
+      "h": 1024
+    },
+    "horizontalScroll": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "docHeight": 7951,
+    "h1": 1,
+    "title": "Strony internetowe dla firm | Pawłowski Studio",
+    "brokenImgs": [],
+    "seriousViolations": [],
+    "consoleErrors": []
+  },
+  {
+    "viewport": {
+      "w": 1024,
+      "h": 800
+    },
+    "horizontalScroll": false,
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "docHeight": 7549,
+    "h1": 1,
+    "title": "Strony internetowe dla firm | Pawłowski Studio",
+    "brokenImgs": [],
+    "seriousViolations": [],
+    "consoleErrors": []
+  },
+  {
+    "viewport": {
+      "w": 1280,
+      "h": 800
+    },
+    "horizontalScroll": false,
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "docHeight": 7522,
+    "h1": 1,
+    "title": "Strony internetowe dla firm | Pawłowski Studio",
+    "brokenImgs": [],
+    "seriousViolations": [],
+    "consoleErrors": []
+  },
+  {
+    "viewport": {
+      "w": 1440,
+      "h": 900
+    },
+    "horizontalScroll": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "docHeight": 7954,
+    "h1": 1,
+    "title": "Strony internetowe dla firm | Pawłowski Studio",
+    "brokenImgs": [],
+    "seriousViolations": [],
+    "consoleErrors": []
+  },
+  {
+    "viewport": {
+      "w": 1920,
+      "h": 1080
+    },
+    "horizontalScroll": false,
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "docHeight": 8440,
+    "h1": 1,
+    "title": "Strony internetowe dla firm | Pawłowski Studio",
+    "brokenImgs": [],
+    "seriousViolations": [],
+    "consoleErrors": []
+  }
+]

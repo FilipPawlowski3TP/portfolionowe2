@@ -1,0 +1,12 @@
+---
+// Text with Polish typography applied (NBSP after single-letter prepositions).
+import { typo } from '../utils/typo';
+
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+{typo(text)}

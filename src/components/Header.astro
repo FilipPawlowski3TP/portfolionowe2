@@ -1,0 +1,62 @@
+---
+// VISUAL RESET v2 §5: brand left, live clock centre (desktop), nav + CTA right.
+// Clock: city name only without JS; live Europe/Warsaw time is wired in Krok 3.
+// Mobile menu is a <details> disclosure — works without JS.
+import Wordmark from './Wordmark.astro';
+import T from './T.astro';
+import { site } from '../data/site';
+---
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="/">
+      <Wordmark />
+    </a>
+
+    <p class="site-header__clock" data-clock>
+      Wrocław, <span data-clock-time>--:--</span>
+    </p>
+
+    <div class="site-header__navwrap">
+      <nav class="site-nav" aria-label="Główne">
+        <ul class="site-nav__list">
+          {
+            site.nav.links.map((link) => (
+              <li>
+                <a href={link.href}>
+                  <T text={link.label} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary site-header__cta" href={site.nav.cta.href}>
+        <T text={site.nav.cta.label} />
+      </a>
+
+      <details class="nav-mobile">
+        <summary class="nav-mobile__summary">Menu</summary>
+        <nav class="nav-mobile__panel" aria-label="Mobilne">
+          <ul>
+            {
+              site.nav.links.map((link) => (
+                <li>
+                  <a href={link.href}>
+                    <T text={link.label} />
+                  </a>
+                </li>
+              ))
+            }
+            <li>
+              <a class="btn btn--primary nav-mobile__cta" href={site.nav.cta.href}>
+                <T text={site.nav.cta.label} />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>

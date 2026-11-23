@@ -1,0 +1,24 @@
+---
+// Layout for legal pages (privacy, cookies).
+import Base from './Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/legal.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<Base {title} {description}>
+  <Header />
+  <main id="tresc" class="legal">
+    <article class="container container--narrow legal__article">
+      <slot />
+    </article>
+  </main>
+  <Footer />
+</Base>

@@ -1,0 +1,86 @@
+{
+  "desktop": {
+    "shots": [
+      {
+        "label": "0%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-desktop-000.png"
+      },
+      {
+        "label": "25%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-desktop-025.png"
+      },
+      {
+        "label": "50%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-desktop-050.png"
+      },
+      {
+        "label": "75%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-desktop-075.png"
+      },
+      {
+        "label": "100%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-desktop-100.png"
+      }
+    ],
+    "skipHidden": true,
+    "skipFocused": true,
+    "axeSeriousCritical": [],
+    "consoleErrors": []
+  },
+  "mobile": {
+    "shots": [
+      {
+        "label": "0%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-mobile-000.png"
+      },
+      {
+        "label": "25%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-mobile-025.png"
+      },
+      {
+        "label": "50%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-mobile-050.png"
+      },
+      {
+        "label": "75%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-mobile-075.png"
+      },
+      {
+        "label": "100%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-mobile-100.png"
+      }
+    ],
+    "skipHidden": true,
+    "skipFocused": true,
+    "axeSeriousCritical": [],
+    "consoleErrors": []
+  },
+  "wide": {
+    "shots": [
+      {
+        "label": "0%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-wide-000.png"
+      },
+      {
+        "label": "25%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-wide-025.png"
+      },
+      {
+        "label": "50%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-wide-050.png"
+      },
+      {
+        "label": "75%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-wide-075.png"
+      },
+      {
+        "label": "100%",
+        "path": "C:/Users/karolina/Desktop/PortfolioClaud/docs/qa/visual-patch-v3/k1-wide-100.png"
+      }
+    ],
+    "skipHidden": true,
+    "skipFocused": true,
+    "axeSeriousCritical": [],
+    "consoleErrors": []
+  }
+}

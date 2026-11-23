@@ -1,0 +1,70 @@
+---
+// Draft legal document — to be verified by a lawyer (docs/LEGAL_DRAFT_NOTES.md).
+import Legal from '../layouts/Legal.astro';
+import { site } from '../data/site';
+---
+
+<Legal
+  title="Polityka prywatności | Pawłowski Studio"
+  description="Jak przetwarzam dane osobowe: cele, podstawy prawne, odbiorcy i Twoje prawa."
+>
+  <h1>Polityka prywatności</h1>
+
+  <h2>Administrator danych</h2>
+  <p>
+    Administratorem Twoich danych osobowych jest {site.brand.person} (prowadzący działalność pod nazwą {
+      site.brand.name
+    }). Kontakt w sprawach danych osobowych: <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>.
+  </p>
+  <p>Nie wyznaczyłem inspektora ochrony danych — we wszystkich sprawach dotyczących prywatności pisz na powyższy adres.</p>
+
+  <h2>Jakie dane przetwarzam i dlaczego</h2>
+  <ul>
+    <li>
+      <strong>Dane z formularza kontaktowego, e-maila</strong> (imię, adres e-mail, treść wiadomości) — żeby
+      odpowiedzieć na Twoje zapytanie i przygotować ofertę. Podstawa prawna: art. 6 ust. 1 lit. b RODO (działania
+      przed zawarciem umowy) albo art. 6 ust. 1 lit. f RODO (kontakt biznesowy). Dane przechowuję do czasu
+      zamknięcia sprawy, nie dłużej niż 3 lata od ostatniego kontaktu.
+    </li>
+    <li>
+      <strong>Logi serwera</strong> (adres IP, data i czas, adres strony, informacje o przeglądarce) — ze względu na
+      bezpieczeństwo i prawidłowe działanie serwisu. Podstawa prawna: art. 6 ust. 1 lit. f RODO. Logi przechowuje
+      dostawca hostingu, zgodnie ze swoją polityką.
+    </li>
+    <li>
+      <strong>Analityka</strong> — nie korzystam z narzędzi analitycznych ani reklamowych. Ta strona nie używa plików
+      cookies ani podobnych technologii do śledzenia.
+    </li>
+  </ul>
+
+  <h2>Odbiorcy danych</h2>
+  <p>
+    Twoje dane mogą otrzymać: dostawca hostingu (serwer, na którym stoi strona), dostawca usługi poczty e-mail oraz
+    dostawca usługi antyspamowej zabezpieczającej formularz. Nie przekazuję danych poza Europejski Obszar
+    Gospodarczy poza sytuacjami opisanymi przez tych dostawców w ich politykach.
+  </p>
+
+  <h2>Twoje prawa</h2>
+  <p>Masz prawo do:</p>
+  <ul>
+    <li>dostępu do swoich danych i ich sprostowania,</li>
+    <li>usunięcia danych albo ograniczenia ich przetwarzania,</li>
+    <li>sprzeciwu wobec przetwarzania (gdy podstawą jest prawnie uzasadniony interes),</li>
+    <li>przenoszenia danych,</li>
+    <li>cofnięcia zgody — jeśli przetwarzanie odbywało się na jej podstawie.</li>
+  </ul>
+  <p>
+    Aby skorzystać z praw, napisz na {site.contact.email}. Przysługuje Ci także skarga do Prezesa Urzędu Ochrony
+    Danych Osobowych (uodo.gov.pl).
+  </p>
+
+  <h2>Dobrowolność podania danych</h2>
+  <p>
+    Podanie danych w formularzu jest dobrowolne, ale bez nich nie będę mógł odpowiedzieć na Twoje zapytanie.
+  </p>
+
+  <h2>Zautomatyzowane decyzje</h2>
+  <p>Twoje dane nie są wykorzystywane do zautomatyzowanego podejmowania decyzji ani profilowania.</p>
+
+  <p class="legal__updated">Ostatnia aktualizacja: listopad 2026.</p>
+</Legal>

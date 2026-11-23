@@ -1,0 +1,14 @@
+---
+// 404 — noindex, friendly way back.
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Nie znaleziono strony | Pawłowski Studio" description="Ta strona nie istnieje." noindex={true}>
+  <main id="tresc" class="legal">
+    <div class="container container--narrow legal__article">
+      <h1>Tu nic nie ma</h1>
+      <p>Adres, pod który trafiłeś, nie istnieje albo się zmienił.</p>
+      <p><a class="btn btn--primary" href="/">Wróć na stronę główną</a></p>
+    </div>
+  </main>
+</Base>

@@ -1,0 +1,779 @@
+{
+  "url": "https://koparkapawlowski.pl/",
+  "auditedAt": "2026-11-06T01:29:16.464Z",
+  "runs": {
+    "desktop": {
+      "url": "https://koparkapawlowski.pl/",
+      "lang": "pl",
+      "title": "Usługi minikoparką Wrocław — wykopy, fundamenty, niwelacja | Koparki Pawłowski",
+      "titleLen": 78,
+      "description": "Koparki Pawłowski: usługi minikoparką do 2 ton z operatorem we Wrocławiu i okolicach. Kopanie fundamentów, wykopy pod kanalizacje i instalacje, korytowanie, równanie terenu. Zadzwoń: 792 611 777.",
+      "descLen": 195,
+      "canonical": "https://www.koparkapawlowski.pl/",
+      "robots": null,
+      "metas": {
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Koparki Pawłowski: usługi minikoparką do 2 ton z operatorem we Wrocławiu i okolicach. Kopanie fundamentów, wykopy pod kanalizacje i instalacje, korytowanie, równanie terenu. Zadzwoń: 792 611 777.",
+        "theme-color": "#211c17",
+        "og:type": "website",
+        "og:locale": "pl_PL",
+        "og:site_name": "Koparki Pawłowski",
+        "og:title": "Usługi minikoparką Wrocław — wykopy, fundamenty, niwelacja | Koparki Pawłowski",
+        "og:description": "Koparki Pawłowski: usługi minikoparką do 2 ton z operatorem we Wrocławiu i okolicach. Kopanie fundamentów, wykopy pod kanalizacje i instalacje, korytowanie, równanie terenu. Zadzwoń: 792 611 777.",
+        "og:url": "https://www.koparkapawlowski.pl/",
+        "og:image": "https://www.koparkapawlowski.pl/images/og-image.jpg",
+        "twitter:card": "summary_large_image"
+      },
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Wykopy i prace ziemne minikoparką we Wrocławiu"
+        },
+        {
+          "level": "H2",
+          "text": "Co robimy minikoparką"
+        },
+        {
+          "level": "H2",
+          "text": "Od telefonu do gotowej pracy"
+        },
+        {
+          "level": "H3",
+          "text": "Rozmowa"
+        },
+        {
+          "level": "H3",
+          "text": "Ustalenia"
+        },
+        {
+          "level": "H3",
+          "text": "Realizacja"
+        },
+        {
+          "level": "H3",
+          "text": "Odbiór"
+        },
+        {
+          "level": "H2",
+          "text": "Minikoparka do 2 ton — tam, gdzie duży sprzęt nie wjedzie"
+        },
+        {
+          "level": "H2",
+          "text": "Nasza maszyna przy pracy"
+        },
+        {
+          "level": "H2",
+          "text": "Wrocław i okolice"
+        },
+        {
+          "level": "H3",
+          "text": "Godziny otwarcia"
+        },
+        {
+          "level": "H2",
+          "text": "Najczęstsze pytania"
+        },
+        {
+          "level": "H2",
+          "text": "Masz wykop do zrobienia?"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "HomeAndConstructionBusiness",
+          "name": "Koparki Pawłowski",
+          "url": "https://www.koparkapawlowski.pl",
+          "email": "piotrpawlowski1979@gmail.com",
+          "telephone": "+48792611777",
+          "description": "Koparki Pawłowski — usługi minikoparką do 2 ton z operatorem we Wrocławiu i okolicach. Kopanie fundamentów, wykopy pod kanalizacje i instalacje, korytowanie, równanie terenu.",
+          "areaServed": {
+            "@type": "City",
+            "name": "Wrocław"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Wrocław",
+            "addressCountry": "PL"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "07:30",
+              "closes": "20:30"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "08:00",
+              "closes": "18:30"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Czy usługa jest z operatorem?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak. Minikoparka jest dostarczana wraz z operatorem — nie wynajmujemy samego sprzętu. Operator wykonuje pracę i odpowiada za jej przebieg."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Na jakim terenie pracujecie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Działamy we Wrocławiu i okolicach. Jeśli nie masz pewności, czy dojedziemy pod Twój adres, zadzwoń — potwierdzimy to podczas rozmowy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ile kosztuje usługa minikoparką?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Koszt zależy od rodzaju prac, głębokości, gruntu i czasu potrzebnego na realizację. Wyceniamy po krótkiej rozmowie telefonicznej — wystarczy opisać, co jest do zrobienia i podać lokalizację."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jakim sprzętem wykonujecie prace?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pracujemy minikoparką do 2 ton. Kompaktowe wymiary maszyny pozwalają pracować na ciasnych działkach, w ogrodach i za wąskimi przejazdami, gdzie większy sprzęt nie wjedzie."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "W jakich godzinach można się kontaktować?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Telefon odbieramy od poniedziałku do piątku w godzinach 7:30–20:30 oraz w soboty w godzinach 8:00–18:30. W niedziele firma jest nieczynna."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jak przygotować się do przyjazdu koparki?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Przed rozpoczęciem prac warto upewnić się, że znamy przebieg instalacji na działce (woda, prąd, gaz, kanalizacja) i wskazać dokładne miejsce prac. Szczegóły ustalamy podczas rozmowy telefonicznej."
+              }
+            }
+          ]
+        }
+      ],
+      "imgs": [
+        {
+          "src": "https://koparkapawlowski.pl/images/praca-w-ciasnym-przejsciu-sm.webp",
+          "alt": "Minikoparka Kubota pracująca w wąskim przejściu między ścianą budynku a chodnikiem.",
+          "w": 0,
+          "h": 0,
+          "lazy": true
+        },
+        {
+          "src": "https://koparkapawlowski.pl/images/prace-miejskie-kopanie-sm.webp",
+          "alt": "Minikoparka podczas kopania wykopu w zabudowie miejskiej.",
+          "w": 0,
+          "h": 0,
+          "lazy": true
+        },
+        {
+          "src": "https://koparkapawlowski.pl/images/wykop-liniowy-trawnik-sm.webp",
+          "alt": "Długi wąski wykop liniowy prowadzony przez trawnik na działce.",
+          "w": 0,
+          "h": 0,
+          "lazy": true
+        },
+        {
+          "src": "https://koparkapawlowski.pl/images/zaladunek-urobku-sm.webp",
+          "alt": "Minikoparka ładująca ziemię do kontenera na urobek.",
+          "w": 0,
+          "h": 0,
+          "lazy": true
+        }
+      ],
+      "sections": [
+        {
+          "tag": "header",
+          "id": null,
+          "heading": null
+        },
+        {
+          "tag": "nav",
+          "id": "site-nav",
+          "heading": null
+        },
+        {
+          "tag": "main",
+          "id": "tresc",
+          "heading": "Wykopy i prace ziemne minikoparką we Wrocławiu"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Wykopy i prace ziemne minikoparką we Wrocławiu"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Co robimy minikoparką"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Od telefonu do gotowej pracy"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Minikoparka do 2 ton — tam, gdzie duży sprzęt nie wjedzie"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Nasza maszyna przy pracy"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Wrocław i okolice"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Najczęstsze pytania"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Masz wykop do zrobienia?"
+        },
+        {
+          "tag": "footer",
+          "id": null,
+          "heading": null
+        }
+      ],
+      "linksTotal": 30,
+      "internalLinks": [
+        "https://koparkapawlowski.pl/#tresc",
+        "https://koparkapawlowski.pl/",
+        "https://koparkapawlowski.pl/uslugi/",
+        "https://koparkapawlowski.pl/realizacje/",
+        "https://koparkapawlowski.pl/obszar-dzialania/",
+        "https://koparkapawlowski.pl/o-firmie/",
+        "https://koparkapawlowski.pl/kontakt/",
+        "https://koparkapawlowski.pl/uslugi/",
+        "https://koparkapawlowski.pl/uslugi/wykopy-pod-fundamenty/",
+        "https://koparkapawlowski.pl/uslugi/wykopy-pod-instalacje/",
+        "https://koparkapawlowski.pl/uslugi/korytowanie-pod-kostke/",
+        "https://koparkapawlowski.pl/uslugi/niwelacja-terenu/",
+        "https://koparkapawlowski.pl/kontakt/",
+        "https://koparkapawlowski.pl/uslugi/",
+        "https://koparkapawlowski.pl/realizacje/",
+        "https://koparkapawlowski.pl/uslugi/",
+        "https://koparkapawlowski.pl/realizacje/",
+        "https://koparkapawlowski.pl/obszar-dzialania/",
+        "https://koparkapawlowski.pl/o-firmie/",
+        "https://koparkapawlowski.pl/kontakt/",
+        "https://koparkapawlowski.pl/polityka-prywatnosci/"
+      ],
+      "externalLinks": [],
+      "telLinks": [
+        "tel:+48792611777",
+        "tel:+48792611777",
+        "tel:+48792611777",
+        "tel:+48792611777",
+        "tel:+48792611777",
+        "tel:+48792611777",
+        "tel:+48792611777"
+      ],
+      "mailLinks": [
+        "mailto:piotrpawlowski1979@gmail.com",
+        "mailto:piotrpawlowski1979@gmail.com"
+      ],
+      "resourcesCount": 8,
+      "resourcesByType": {
+        "link": 2,
+        "script": 3,
+        "css": 2,
+        "other": 1
+      },
+      "externalRequestDomains": [
+        "static.cloudflareinsights.com"
+      ],
+      "totalTransfer": 74416,
+      "resources": [
+        {
+          "name": "https://koparkapawlowski.pl/_astro/index.CO_laBAC.css",
+          "type": "link",
+          "transferSize": 4741,
+          "decodedBodySize": 16532
+        },
+        {
+          "name": "https://koparkapawlowski.pl/_astro/index.DbnQgZNB.css",
+          "type": "link",
+          "transferSize": 462,
+          "decodedBodySize": 395
+        },
+        {
+          "name": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+          "type": "script",
+          "transferSize": 0,
+          "decodedBodySize": 0
+        },
+        {
+          "name": "https://koparkapawlowski.pl/_astro/Header.astro_astro_type_script_index_0_lang.DE9ksJ5s.js",
+          "type": "script",
+          "transferSize": 520,
+          "decodedBodySize": 390
+        },
+        {
+          "name": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+          "type": "script",
+          "transferSize": 0,
+          "decodedBodySize": 0
+        },
+        {
+          "name": "https://koparkapawlowski.pl/_astro/archivo-latin-wght-normal.E0tuGl4L.woff2",
+          "type": "css",
+          "transferSize": 35228,
+          "decodedBodySize": 34928
+        },
+        {
+          "name": "https://koparkapawlowski.pl/_astro/archivo-latin-ext-wght-normal.C4zznr8T.woff2",
+          "type": "css",
+          "transferSize": 32908,
+          "decodedBodySize": 32608
+        },
+        {
+          "name": "https://koparkapawlowski.pl/favicon.svg",
+          "type": "other",
+          "transferSize": 557,
+          "decodedBodySize": 482
+        }
+      ],
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "docHeight": 6523,
+      "fonts": [
+        "archivo-latin-wght-normal.E0tuGl4L.woff2",
+        "archivo-latin-ext-wght-normal.C4zznr8T.woff2"
+      ],
+      "consoleErrors": [
+        "error: Loading the script 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' violates the following Content Security Policy directive: \"script-src 'self'\". N"
+      ],
+      "failedRequests": [
+        "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092 — csp"
+      ],
+      "cookies": []
+    },
+    "mobile": {
+      "url": "https://koparkapawlowski.pl/",
+      "lang": "pl",
+      "title": "Usługi minikoparką Wrocław — wykopy, fundamenty, niwelacja | Koparki Pawłowski",
+      "titleLen": 78,
+      "description": "Koparki Pawłowski: usługi minikoparką do 2 ton z operatorem we Wrocławiu i okolicach. Kopanie fundamentów, wykopy pod kanalizacje i instalacje, korytowanie, równanie terenu. Zadzwoń: 792 611 777.",
+      "descLen": 195,
+      "canonical": "https://www.koparkapawlowski.pl/",
+      "robots": null,
+      "metas": {
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Koparki Pawłowski: usługi minikoparką do 2 ton z operatorem we Wrocławiu i okolicach. Kopanie fundamentów, wykopy pod kanalizacje i instalacje, korytowanie, równanie terenu. Zadzwoń: 792 611 777.",
+        "theme-color": "#211c17",
+        "og:type": "website",
+        "og:locale": "pl_PL",
+        "og:site_name": "Koparki Pawłowski",
+        "og:title": "Usługi minikoparką Wrocław — wykopy, fundamenty, niwelacja | Koparki Pawłowski",
+        "og:description": "Koparki Pawłowski: usługi minikoparką do 2 ton z operatorem we Wrocławiu i okolicach. Kopanie fundamentów, wykopy pod kanalizacje i instalacje, korytowanie, równanie terenu. Zadzwoń: 792 611 777.",
+        "og:url": "https://www.koparkapawlowski.pl/",
+        "og:image": "https://www.koparkapawlowski.pl/images/og-image.jpg",
+        "twitter:card": "summary_large_image"
+      },
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Wykopy i prace ziemne minikoparką we Wrocławiu"
+        },
+        {
+          "level": "H2",
+          "text": "Co robimy minikoparką"
+        },
+        {
+          "level": "H2",
+          "text": "Od telefonu do gotowej pracy"
+        },
+        {
+          "level": "H3",
+          "text": "Rozmowa"
+        },
+        {
+          "level": "H3",
+          "text": "Ustalenia"
+        },
+        {
+          "level": "H3",
+          "text": "Realizacja"
+        },
+        {
+          "level": "H3",
+          "text": "Odbiór"
+        },
+        {
+          "level": "H2",
+          "text": "Minikoparka do 2 ton — tam, gdzie duży sprzęt nie wjedzie"
+        },
+        {
+          "level": "H2",
+          "text": "Nasza maszyna przy pracy"
+        },
+        {
+          "level": "H2",
+          "text": "Wrocław i okolice"
+        },
+        {
+          "level": "H3",
+          "text": "Godziny otwarcia"
+        },
+        {
+          "level": "H2",
+          "text": "Najczęstsze pytania"
+        },
+        {
+          "level": "H2",
+          "text": "Masz wykop do zrobienia?"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "HomeAndConstructionBusiness",
+          "name": "Koparki Pawłowski",
+          "url": "https://www.koparkapawlowski.pl",
+          "email": "piotrpawlowski1979@gmail.com",
+          "telephone": "+48792611777",
+          "description": "Koparki Pawłowski — usługi minikoparką do 2 ton z operatorem we Wrocławiu i okolicach. Kopanie fundamentów, wykopy pod kanalizacje i instalacje, korytowanie, równanie terenu.",
+          "areaServed": {
+            "@type": "City",
+            "name": "Wrocław"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Wrocław",
+            "addressCountry": "PL"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "07:30",
+              "closes": "20:30"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "08:00",
+              "closes": "18:30"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Czy usługa jest z operatorem?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak. Minikoparka jest dostarczana wraz z operatorem — nie wynajmujemy samego sprzętu. Operator wykonuje pracę i odpowiada za jej przebieg."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Na jakim terenie pracujecie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Działamy we Wrocławiu i okolicach. Jeśli nie masz pewności, czy dojedziemy pod Twój adres, zadzwoń — potwierdzimy to podczas rozmowy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ile kosztuje usługa minikoparką?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Koszt zależy od rodzaju prac, głębokości, gruntu i czasu potrzebnego na realizację. Wyceniamy po krótkiej rozmowie telefonicznej — wystarczy opisać, co jest do zrobienia i podać lokalizację."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jakim sprzętem wykonujecie prace?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pracujemy minikoparką do 2 ton. Kompaktowe wymiary maszyny pozwalają pracować na ciasnych działkach, w ogrodach i za wąskimi przejazdami, gdzie większy sprzęt nie wjedzie."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "W jakich godzinach można się kontaktować?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Telefon odbieramy od poniedziałku do piątku w godzinach 7:30–20:30 oraz w soboty w godzinach 8:00–18:30. W niedziele firma jest nieczynna."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jak przygotować się do przyjazdu koparki?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Przed rozpoczęciem prac warto upewnić się, że znamy przebieg instalacji na działce (woda, prąd, gaz, kanalizacja) i wskazać dokładne miejsce prac. Szczegóły ustalamy podczas rozmowy telefonicznej."
+              }
+            }
+          ]
+        }
+      ],
+      "imgs": [
+        {
+          "src": "https://koparkapawlowski.pl/images/praca-w-ciasnym-przejsciu-sm.webp",
+          "alt": "Minikoparka Kubota pracująca w wąskim przejściu między ścianą budynku a chodnikiem.",
+          "w": 0,
+          "h": 0,
+          "lazy": true
+        },
+        {
+          "src": "https://koparkapawlowski.pl/images/prace-miejskie-kopanie-sm.webp",
+          "alt": "Minikoparka podczas kopania wykopu w zabudowie miejskiej.",
+          "w": 0,
+          "h": 0,
+          "lazy": true
+        },
+        {
+          "src": "https://koparkapawlowski.pl/images/wykop-liniowy-trawnik-sm.webp",
+          "alt": "Długi wąski wykop liniowy prowadzony przez trawnik na działce.",
+          "w": 0,
+          "h": 0,
+          "lazy": true
+        },
+        {
+          "src": "https://koparkapawlowski.pl/images/zaladunek-urobku-sm.webp",
+          "alt": "Minikoparka ładująca ziemię do kontenera na urobek.",
+          "w": 0,
+          "h": 0,
+          "lazy": true
+        }
+      ],
+      "sections": [
+        {
+          "tag": "header",
+          "id": null,
+          "heading": null
+        },
+        {
+          "tag": "nav",
+          "id": "site-nav",
+          "heading": null
+        },
+        {
+          "tag": "main",
+          "id": "tresc",
+          "heading": "Wykopy i prace ziemne minikoparką we Wrocławiu"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Wykopy i prace ziemne minikoparką we Wrocławiu"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Co robimy minikoparką"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Od telefonu do gotowej pracy"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Minikoparka do 2 ton — tam, gdzie duży sprzęt nie wjedzie"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Nasza maszyna przy pracy"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Wrocław i okolice"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Najczęstsze pytania"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "heading": "Masz wykop do zrobienia?"
+        },
+        {
+          "tag": "footer",
+          "id": null,
+          "heading": null
+        }
+      ],
+      "linksTotal": 30,
+      "internalLinks": [
+        "https://koparkapawlowski.pl/#tresc",
+        "https://koparkapawlowski.pl/",
+        "https://koparkapawlowski.pl/uslugi/",
+        "https://koparkapawlowski.pl/realizacje/",
+        "https://koparkapawlowski.pl/obszar-dzialania/",
+        "https://koparkapawlowski.pl/o-firmie/",
+        "https://koparkapawlowski.pl/kontakt/",
+        "https://koparkapawlowski.pl/uslugi/",
+        "https://koparkapawlowski.pl/uslugi/wykopy-pod-fundamenty/",
+        "https://koparkapawlowski.pl/uslugi/wykopy-pod-instalacje/",
+        "https://koparkapawlowski.pl/uslugi/korytowanie-pod-kostke/",
+        "https://koparkapawlowski.pl/uslugi/niwelacja-terenu/",
+        "https://koparkapawlowski.pl/kontakt/",
+        "https://koparkapawlowski.pl/uslugi/",
+        "https://koparkapawlowski.pl/realizacje/",
+        "https://koparkapawlowski.pl/uslugi/",
+        "https://koparkapawlowski.pl/realizacje/",
+        "https://koparkapawlowski.pl/obszar-dzialania/",
+        "https://koparkapawlowski.pl/o-firmie/",
+        "https://koparkapawlowski.pl/kontakt/",
+        "https://koparkapawlowski.pl/polityka-prywatnosci/"
+      ],
+      "externalLinks": [],
+      "telLinks": [
+        "tel:+48792611777",
+        "tel:+48792611777",
+        "tel:+48792611777",
+        "tel:+48792611777",
+        "tel:+48792611777",
+        "tel:+48792611777",
+        "tel:+48792611777"
+      ],
+      "mailLinks": [
+        "mailto:piotrpawlowski1979@gmail.com",
+        "mailto:piotrpawlowski1979@gmail.com"
+      ],
+      "resourcesCount": 8,
+      "resourcesByType": {
+        "link": 2,
+        "script": 3,
+        "css": 2,
+        "other": 1
+      },
+      "externalRequestDomains": [
+        "static.cloudflareinsights.com"
+      ],
+      "totalTransfer": 74416,
+      "resources": [
+        {
+          "name": "https://koparkapawlowski.pl/_astro/index.CO_laBAC.css",
+          "type": "link",
+          "transferSize": 4741,
+          "decodedBodySize": 16532
+        },
+        {
+          "name": "https://koparkapawlowski.pl/_astro/index.DbnQgZNB.css",
+          "type": "link",
+          "transferSize": 462,
+          "decodedBodySize": 395
+        },
+        {
+          "name": "https://koparkapawlowski.pl/_astro/Header.astro_astro_type_script_index_0_lang.DE9ksJ5s.js",
+          "type": "script",
+          "transferSize": 520,
+          "decodedBodySize": 390
+        },
+        {
+          "name": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+          "type": "script",
+          "transferSize": 0,
+          "decodedBodySize": 0
+        },
+        {
+          "name": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+          "type": "script",
+          "transferSize": 0,
+          "decodedBodySize": 0
+        },
+        {
+          "name": "https://koparkapawlowski.pl/_astro/archivo-latin-wght-normal.E0tuGl4L.woff2",
+          "type": "css",
+          "transferSize": 35228,
+          "decodedBodySize": 34928
+        },
+        {
+          "name": "https://koparkapawlowski.pl/_astro/archivo-latin-ext-wght-normal.C4zznr8T.woff2",
+          "type": "css",
+          "transferSize": 32908,
+          "decodedBodySize": 32608
+        },
+        {
+          "name": "https://koparkapawlowski.pl/favicon.svg",
+          "type": "other",
+          "transferSize": 557,
+          "decodedBodySize": 482
+        }
+      ],
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "docHeight": 10223,
+      "fonts": [
+        "archivo-latin-wght-normal.E0tuGl4L.woff2",
+        "archivo-latin-ext-wght-normal.C4zznr8T.woff2"
+      ],
+      "consoleErrors": [
+        "error: Loading the script 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' violates the following Content Security Policy directive: \"script-src 'self'\". N"
+      ],
+      "failedRequests": [
+        "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092 — csp"
+      ],
+      "cookies": []
+    }
+  },
+  "urlVariants": {
+    "https://koparkapawlowski.pl/": {
+      "status": 200,
+      "finalUrl": "https://koparkapawlowski.pl/",
+      "canonical": "https://www.koparkapawlowski.pl/"
+    },
+    "https://www.koparkapawlowski.pl/": {
+      "status": 200,
+      "finalUrl": "https://www.koparkapawlowski.pl/",
+      "canonical": "https://www.koparkapawlowski.pl/"
+    },
+    "http://koparkapawlowski.pl/": {
+      "status": 200,
+      "finalUrl": "https://koparkapawlowski.pl/",
+      "canonical": "https://www.koparkapawlowski.pl/"
+    }
+  }
+}

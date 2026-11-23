@@ -1,0 +1,35 @@
+---
+// Krok 5 — przejrzystość: minimal line icons (24px, stroke 1.75, currentColor)
+// as scannable anchors in the service/benefit/step blocks. Decorative only
+// (aria-hidden) — every icon sits next to its text label.
+interface Props {
+  name: 'window' | 'card' | 'target' | 'shield' | 'bolt' | 'phone' | 'search' | 'key' | 'chat' | 'pencil' | 'layers' | 'flag';
+}
+const { name } = Astro.props;
+---
+
+<svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  {name === 'window' && <><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line></>}
+  {name === 'card' && <><rect x="2.5" y="6" width="19" height="12" rx="2"></rect><line x1="6" y1="10" x2="13" y2="10"></line><line x1="6" y1="13.5" x2="16" y2="13.5"></line></>}
+  {name === 'target' && <><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3.5"></circle></>}
+  {name === 'shield' && <><path d="M12 3 19 6v5c0 4.4-2.9 7.6-7 9-4.1-1.4-7-4.6-7-9V6z"></path><path d="M9 11.5 11.2 14 15.5 9.5"></path></>}
+  {name === 'bolt' && <path d="M13 2 5 13.5h5.5L10 22l8-11.5h-5.5z"></path>}
+  {name === 'phone' && <><rect x="7" y="2" width="10" height="20" rx="2.5"></rect><line x1="10.5" y1="18.5" x2="13.5" y2="18.5"></line></>}
+  {name === 'search' && <><circle cx="11" cy="11" r="6.5"></circle><line x1="15.8" y1="15.8" x2="21" y2="21"></line></>}
+  {name === 'key' && <><circle cx="7.5" cy="7.5" r="4"></circle><line x1="10.4" y1="10.4" x2="20" y2="20"></line><line x1="17" y1="17" x2="15" y2="19"></line><line x1="19" y1="19" x2="17" y2="21"></line></>}
+  {name === 'chat' && <><rect x="3.5" y="4.5" width="17" height="12" rx="2"></rect><path d="M9 16.5 7.5 20l4.5-3.5"></path></>}
+  {name === 'pencil' && <><path d="M4 20l1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19z"></path><line x1="14.5" y1="6.5" x2="17.5" y2="9.5"></line></>}
+  {name === 'layers' && <><path d="M12 3 21 8l-9 5-9-5z"></path><path d="M4.5 11.5 12 15.75l7.5-4.25"></path><path d="M4.5 15.5 12 19.75l7.5-4.25"></path></>}
+  {name === 'flag' && <><line x1="6" y1="3" x2="6" y2="21"></line><path d="M6 4.5h11l-2.5 4 2.5 4H6z"></path></>}
+</svg>
+
+<style>
+  .icon {
+    display: block;
+    flex: none;
+    color: var(--ink);
+    transition:
+      color var(--t-micro) ease,
+      transform var(--t-micro) ease;
+  }
+</style>

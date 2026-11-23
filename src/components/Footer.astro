@@ -1,0 +1,32 @@
+---
+// VISUAL RESET v2 §5.8 — Stopka: service provider data (no company data —
+// owner decision G0, BRIEF §3) and legal links. The giant cropped wordmark
+// is removed per owner decision (2026-11-23) — the footer is plain rows.
+import T from './T.astro';
+import { site } from '../data/site';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div>
+      <p>
+        <strong>{site.brand.person}</strong> — {site.brand.name}
+      </p>
+      <p>
+        <T text={site.footer.line} />
+      </p>
+    </div>
+    <nav class="site-footer__links" aria-label="Prawne">
+      {
+        site.footer.links.map((link) => (
+          <a href={link.href}>
+            <T text={link.label} />
+          </a>
+        ))
+      }
+    </nav>
+    <p>{site.footer.copyright(year)}</p>
+  </div>
+</footer>

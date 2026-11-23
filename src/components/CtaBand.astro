@@ -1,0 +1,25 @@
+---
+// Krok 5 (przejrzystość): the closing CTA band (grafik-24.pl ends with a
+// clear "let's talk" call) — short line + Zadzwoń/Napisz + FAQ link.
+// Content from site.contactSection / site.contact — zero new claims.
+import T from './T.astro';
+import { site } from '../data/site';
+
+const telHref = `tel:${site.contact.phone.replace(/\s/g, '')}`;
+---
+
+<section class="cta-band" aria-labelledby="cta-band-h2">
+  <div class="container">
+    <h2 id="cta-band-h2">
+      <T text={site.contactSection.heading} />
+    </h2>
+    <p class="cta-band__lead">
+      <T text={site.contactSection.lead} />
+    </p>
+    <div class="cta-band__actions">
+      <a class="btn btn--primary" href={telHref}>Zadzwoń</a>
+      <a class="btn btn--outline" href="/kontakt/">Napisz</a>
+    </div>
+    <a class="cta-band__faq" href="/faq/">Masz pytania? Zobacz FAQ →</a>
+  </div>
+</section>

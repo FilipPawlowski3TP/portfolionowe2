@@ -1,0 +1,33 @@
+---
+// SEO head tags — single place for meta, canonical, Open Graph.
+// Content comes from src/data/site.ts (single source of truth).
+import { site } from '../data/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+}
+
+const { title = site.seo.title, description = site.seo.description, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? `https://${site.domain}`);
+const ogImage = new URL(site.seo.ogImage, Astro.site ?? `https://${site.domain}`);
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+{noindex ? <meta name="robots" content="noindex, follow" /> : <link rel="canonical" href={canonical} />}
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content={site.seo.locale} />
+<meta property="og:site_name" content={site.brand.name} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<link rel="sitemap" href="/sitemap-index.xml" />

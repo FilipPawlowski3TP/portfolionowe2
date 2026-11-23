@@ -1,0 +1,107 @@
+---
+// VISUAL RESET v2 §5.7 — Kontakt: giant line, big clickable e-mail, copy
+// button (aria-live), form fields as in v1, clause under the button.
+// Form posts to /api/contact (Cloudflare Pages Function — untouched).
+// Phone is absent by owner decision (G0): no public phone number yet.
+import T from './T.astro';
+import { site } from '../data/site';
+
+const f = site.contactSection.form;
+---
+
+<section class="section contact" id={site.contactSection.id} aria-labelledby="contact-h2">
+  <div class="container">
+    <div class="contact__head">
+      <h2 id="contact-h2">
+        <T text={site.contactSection.heading} />
+      </h2>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__direct">
+        <p>
+          <T text={site.contactSection.lead} />
+        </p>
+        <a class="contact__email" href={`mailto:${site.contact.email}`}>
+          {site.contact.email}
+        </a>
+        <button class="copy-email" type="button" data-copy-email={site.contact.email}>
+          Kopiuj e-mail
+        </button>
+        <p class="copy-email__status" role="status" aria-live="polite" data-copy-status></p>
+      </div>
+
+      <div class="contact__form-wrap">
+        <form class="contact-form" action="/api/contact/" method="post" novalidate>
+          <div class="form-field">
+            <label for="cf-name">
+              <T text={f.name.label} />
+            </label>
+            <input id="cf-name" name="name" type="text" autocomplete={f.name.autocomplete} required />
+          </div>
+
+          <div class="form-field">
+            <label for="cf-email">
+              <T text={f.email.label} />
+            </label>
+            <input id="cf-email" name="email" type="email" autocomplete={f.email.autocomplete} required />
+          </div>
+
+          <div class="form-field">
+            <label for="cf-kind">
+              <T text={f.kind.label} />
+            </label>
+            <select id="cf-kind" name="kind">
+              <option value="">Wybierz…</option>
+              {
+                f.kind.options.map((option) => (
+                  <option value={option}>
+                    <T text={option} />
+                  </option>
+                ))
+              }
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="cf-message">
+              <T text={f.message.label} />
+            </label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+
+          <!-- honeypot: hidden from humans, bots fill it -->
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="cf-website">Website</label>
+            <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <button class="btn btn--primary" type="submit">
+            <T text={f.submit} />
+          </button>
+
+          <p class="contact-form__clause">
+            <T text={site.contactSection.clause} />
+          </p>
+
+          <p class="contact-form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Utility, not motion: copy e-mail with an aria-live confirmation.
+  const button = document.querySelector<HTMLButtonElement>('[data-copy-email]');
+  const status = document.querySelector<HTMLElement>('[data-copy-status]');
+  button?.addEventListener('click', async () => {
+    const email = button.dataset.copyEmail ?? '';
+    try {
+      await navigator.clipboard.writeText(email);
+      if (status) status.textContent = 'Skopiowano adres e-mail.';
+    } catch {
+      if (status) status.textContent = 'Nie udało się skopiować — adres: ' + email;
+    }
+  });
+</script>

@@ -1,0 +1,48 @@
+---
+// Krok 5 (przejrzystość dla Kowalskiego): Oferta as scannable service
+// blocks — icon + short name + one line "co" + one line "dla kogo", like
+// grafik-24.pl's clarity rhythm but in our paper/ink language (hairlines,
+// no cards, no shadows). Content unchanged (site.offer — zero new claims).
+import T from './T.astro';
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+---
+
+<section class="section offer" id={site.offer.id} aria-labelledby="offer-h2">
+  <div class="container">
+    <h2 id="offer-h2">
+      <T text={site.offer.heading} />
+    </h2>
+    <p class="offer__intro">
+      <T text={site.offer.intro} />
+    </p>
+
+    <div class="svc-grid">
+      {
+        site.offer.services.map((s) => (
+          <article class="svc">
+            <Icon name={s.icon} />
+            <h3 class="svc__name">
+              <T text={s.name} />
+            </h3>
+            <p class="svc__what">
+              <T text={s.what} />
+            </p>
+            <p class="svc__for">
+              <T text={s.forWho} />
+            </p>
+            {'cta' in s && (
+              <a class="svc__cta" href="/kontakt/">
+                {s.cta} →
+              </a>
+            )}
+          </article>
+        ))
+      }
+    </div>
+
+    <p class="offer__pricing">
+      <T text={site.offer.pricing} />
+    </p>
+  </div>
+</section>

@@ -1,0 +1,54 @@
+{
+  "points": {
+    "hero": 0.020767633258980078,
+    "oferta": 0.15460349203907392,
+    "proces": 0.30459195446504117,
+    "realizacje": 0.4591954465041151,
+    "faq": 0.7568648565494962,
+    "kontakt": 0.9022382893623567
+  },
+  "heroObject": {
+    "x": 549.4677336769068,
+    "y": 160.55012176147588,
+    "w": 974.1047476982749,
+    "h": 612.3419681467853,
+    "opacity": true,
+    "heightPct": 68,
+    "widthPctOfViewport": 67.6
+  },
+  "caseObject": {
+    "boxW": 630,
+    "widthPctOfViewport": 43.7,
+    "anchorW": 591.4,
+    "centerDeltaX": 0.1,
+    "centerDeltaY": 0
+  },
+  "processObject": {
+    "visible": true,
+    "boxW": 733.9
+  },
+  "renderInfo": {
+    "calls": 16,
+    "triangles": 22,
+    "particles": 0,
+    "dpr": 1
+  },
+  "ghostsAtFaq": {
+    "visible": false
+  },
+  "skyMeanRgb": {
+    "hero": [
+      31,
+      29,
+      51
+    ],
+    "kontakt": [
+      181,
+      127,
+      118
+    ]
+  },
+  "axeSeriousCritical": 0,
+  "hScroll": 0,
+  "consoleErrors": "none"
+}

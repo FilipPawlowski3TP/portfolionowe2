@@ -1,0 +1,51 @@
+---
+// Base layout: correct document head, fonts, skip link, page shell.
+import { Font } from 'astro:assets';
+import SeoHead from '../components/SeoHead.astro';
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/layout.css';
+import '../styles/components.css';
+import '../styles/motion.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+}
+
+const { title, description, noindex } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#070B18" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <SeoHead {title} {description} {noindex} />
+    <Font cssVariable="--font-display" />
+    <Font cssVariable="--font-text" />
+    <!-- js class + 3 s watchdog: reveal all content if motion boot never runs -->
+    <script is:inline>
+      document.documentElement.classList.add('js');
+      setTimeout(function () {
+        if (!window.__MOTION_READY__) document.documentElement.classList.add('reveal-all');
+      }, 3000);
+    </script>
+  </head>
+  <body>
+    <div class="scene-root" id="scene-root" aria-hidden="true">
+      <div class="scene-fallback"></div>
+    </div>
+    <a class="skip-link" href="#tresc">Przejdź do treści</a>
+    <slot />
+    <script>
+      import '../scripts/boot';
+    </script>
+  </body>
+</html>
